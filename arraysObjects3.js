@@ -55,7 +55,7 @@ estudiantes.forEach(est => {
     console.log(est.nombre + ' Edad: ', est.edad + ', Carrera: ', est.carrera);
 })
 // 10. Busca un estudiante por su nombre dentro del array y muestra la información si lo encuentras
-const nombre = 'Vega';
+const nombre = 'Vega'
 const estEnc = estudiantes.find(est => est.nombre === nombre);
 if(estEnc) {
     console.log('Estudiante encontrado: ', estEnc);
