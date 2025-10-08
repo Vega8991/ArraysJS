@@ -15,13 +15,17 @@ const estudiante = {
 };
 
 // 2. Accede y muestra algunas propiedades del objeto
-
+console.log('Nombre: ', estudiante.nombre);
 // 3. Modifica una propiedad del objeto
-
+estudiante.edad = 36
+console.log('Edad modded: ', estudiante.edad)
 // 4. Añade una nueva propiedad al objeto
-
+estudiante.email = 'vega8991@gmail.com';
+console.log('Email new: ', estudiante.email)
 // 5. Recorre todas las propiedades del objeto usando un bucle for...in
-
+for (let propiedad in estudiante) {
+    console.log(propiedad + ': ', estudiante[propiedad])
+}
 // 6. Crea un método dentro del objeto que realice alguna acción (por ejemplo, presentar al estudiante)
 
 // 7. Llama al método que creaste
