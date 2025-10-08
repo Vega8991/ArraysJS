@@ -4,6 +4,10 @@
 
 const frutas = ["manzana", "banana", "naranja", "fresa", "uva"];
 
+frutas.splice(2, 1) /*Elimina una posicion del array 
+y cuantos elementos quiero eliminar(si ponemos
+frutas.splice(2, 2) va a eliminar naranja y fresa)*/
+
 // 2. Imprime el array completo
 
 console.log(frutas);
