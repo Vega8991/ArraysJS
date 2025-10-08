@@ -27,11 +27,38 @@ for (let propiedad in estudiante) {
     console.log(propiedad + ': ', estudiante[propiedad])
 }
 // 6. Crea un método dentro del objeto que realice alguna acción (por ejemplo, presentar al estudiante)
-
+estudiante.presentar = function () {
+    console.log('Hola, soy ', this.nombre);
+}
 // 7. Llama al método que creaste
-
+estudiante.presentar();
 // 8. Crea un array de objetos, donde cada objeto represente a un estudiante diferente
-
+const estudiantes = [
+    {
+        nombre: "Juan",
+        edad: 20,
+        carrera: "Ingeniería"
+    },
+    {
+        nombre: "Ana",
+        edad: 34,
+        carrera: "Diseño"
+    },
+{
+        nombre: "Carmen",
+        edad: 40,
+        carrera: "Desarrollo Web"
+    }
+];
 // 9. Recorre el array de objetos e imprime información de cada estudiante
-
+estudiantes.forEach(est => {
+    console.log(est.nombre + ' Edad: ', est.edad + ', Carrera: ', est.carrera);
+})
 // 10. Busca un estudiante por su nombre dentro del array y muestra la información si lo encuentras
+const nombre = 'Vega';
+const estEnc = estudiantes.find(est => est.nombre === nombre);
+if(estEnc) {
+    console.log('Estudiante encontrado: ', estEnc);
+}else{
+    console.error('Estudiante no encontrado');
+}
